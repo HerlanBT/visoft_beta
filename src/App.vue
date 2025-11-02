@@ -3,7 +3,7 @@ import BtnThemeMode from './components/btn_theme_mode.vue'
 import Header from './components/header.vue';
 import banner from './components/banner.vue';
 import gridservices from './components/servicesgrid.vue';
-import WhyVisoft from "./components/WhyVisoft.vue"
+import WhyVisoft from './components/Porque.vue';
 import ContactForm from './components/ContactForm.vue';
 import Footer from './components/footer.vue';
 </script>
