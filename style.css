@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --text: #00080a;
+    --background: #f0fbff;
+    --primary: #51abf5;
+    --secondary: #1b166a;
+    --accent: #7133db;
+  }
+
+  .dark {
+    --text: #c4eaf3;
+    --background: #020147;
+    --primary: #0a64ae;
+    --secondary: #9b95e9;
+    --accent: #6124cc;
+  }
+
+  html {
+    font-size: 23px;
+    /* antes era 16px default navegador */
+  }
+}
+
+@keyframes visoftOrbit {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-6px) rotate(3deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.visoft-orbit {
+  animation: visoftOrbit 5s ease-in-out infinite;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  transition: background .3s, color .3s;
+  overflow-x: hidden;
+}
+
+.logo-back {
+  background: radial-gradient(circle at center, var(--primary) 0%, var(--background) 100%);
+  transition: background .3s ease;
+}
+
+.body-back {
+  background: radial-gradient(circle at center, var(--primary) 90%, var(--background) 10%);
+  transition: background .3s ease;
+}
+
+.headercom-back {
+  background: radial-gradient(circle at center, var(--primary) 0%, var(--background) 100%);
+  transition: background .3s ease;
+}
+
+.dark .logo-back {
+  background: radial-gradient(circle at center, #ffffff 0%, #ffffff 100%);
+}
+
+.dark .headercom-back {
+  background: radial-gradient(circle at center, var(--primary) 10%, var(--background) 50%);
+}
+
+.dark .body-back {
+  background: radial-gradient(circle at center, var(--primary) 10%, var(--background) 90%);
+}
+
+.dark svg.gradient-icon {
+  stroke: url(#visoft-gradient-dark);
+}
+
+.text-visoft-gradient {
+  background: linear-gradient(90deg, #6ab2ec, #7024f3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* ponemos un borde */
+
+  font-size: 1.5rem;
+}
+.visoft-gradient-border {
+  background: linear-gradient(90deg, #51abf5, #7133db);
+  /* ponemos un borde */
+  border-radius: 12px;
+  border-color: #51abf5;
+  border-width: 2px;
+  padding: 4px 8px;
+  font-size: 1.5rem;
+}
+.visoft-border-form {
+  /* ponemos un borde */
+  
+  border-radius: 12px;
+  border-color: linear-gradient(90deg, #0097fc, #7133db);
+  border-width: 2px;
+
+}
