@@ -15,7 +15,7 @@ import Footer from './components/footer.vue';
     <!-- <img src="/image/visoft3.jpg" class="w-full max-h-[340px] object-cover rounded-b-3xl" /> -->
 
     <!-- HEADER -->
-    <Header />
+    <Header/>
 
     <div class="p-6 flex justify-end">
       <!-- <BtnThemeMode class="scale-75" /> -->
