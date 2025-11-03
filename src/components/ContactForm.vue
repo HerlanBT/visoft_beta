@@ -137,7 +137,7 @@ const form = reactive({
   company: '',
   email: '',
   phone: '',
-  message: ''
+  asunto: ''
 })
 
 /* -------- helpers -------- */
